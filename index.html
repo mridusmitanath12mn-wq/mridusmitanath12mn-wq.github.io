@@ -1,107 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>Mousumi Nath</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mridusmita Nath | Computational Chemistry</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6fa;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:420px;
+background-image:url("banner.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* NAVIGATION */
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+}
+
+nav a:hover{
+color:#c59cff;
+}
+
+/* CONTENT */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+margin-bottom:40px;
+}
+
+/* RESEARCH CARDS */
+
+.research-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.research-item{
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#7c4dff;
+color:white;
+border-radius:6px;
+text-decoration:none;
+margin-top:15px;
+}
+
+.btn:hover{
+background:#5a32d4;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:white;
+margin-top:50px;
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- Banner -->
+
+<!-- HERO -->
+
 <div class="hero">
-<h1>👋 Personal Website</h1>
+
+<div class="hero-content">
+
+<h1>Mridusmita Nath</h1>
+
+<p>PhD Researcher | Computational Chemistry</p>
+
 </div>
 
-<!-- Navigation -->
+</div>
+
+
+<!-- NAVBAR -->
+
 <nav>
+
 <a href="index.html">Home</a>
+
 <a href="research.html">Research</a>
+
 <a href="publications.html">Publications</a>
+
 <a href="photography.html">Photography</a>
+
 <a href="contact.html">Contact</a>
+
 </nav>
+
+
+<!-- ABOUT -->
 
 <div class="container">
 
-<div class="intro-grid">
+<div class="card">
 
-<div class="intro-card">
-
-<h2>Hello!</h2>
+<h2>👋 About Me</h2>
 
 <p>
-I am Mousumi Nath, a PhD researcher in computational chemistry at IISER Kolkata.
-My research focuses on excited-state photophysics, singlet fission, molecular
-spintronics, small molecule activation, and machine learning for materials discovery.
+
+I am <b>Mridusmita Nath</b>, a PhD researcher working in the field of
+Computational Chemistry. My research focuses on excited-state
+photophysics, singlet fission, molecular spintronics, and
+data-driven discovery of advanced organic materials.
+
+</p>
+
+<p>
+
+My work integrates quantum chemistry, machine learning,
+and first-principles simulations to understand electronic
+and transport properties of molecular systems.
+
 </p>
 
 </div>
 
-<div class="profile">
 
-<img src="images/profile.jpg" alt="profile">
+<!-- RESEARCH -->
 
-</div>
+<div class="card">
 
-</div>
-
-<!-- About section -->
-
-<section>
-
-<h2>🌈 About Me</h2>
-
-<p>
-I work at the interface of quantum chemistry, electronic structure theory,
-and machine learning to understand and design functional molecular systems
-for optoelectronic and energy applications.
-</p>
-
-</section>
-
-<!-- Research section -->
-
-<section>
-
-<h2>🔬 Research</h2>
+<h2>🔬 Research Interests</h2>
 
 <div class="research-grid">
 
-<div class="research-card">
-<h3>Singlet Fission</h3>
-<p>Design of organic chromophores for efficient singlet fission in solar energy applications.</p>
-</div>
+<div class="research-item">
 
-<div class="research-card">
-<h3>HLCT OLED Materials</h3>
-<p>Understanding hot exciton pathways in donor–π–acceptor systems.</p>
-</div>
+<h3>Excited State Photophysics</h3>
 
-<div class="research-card">
-<h3>Molecular Spintronics</h3>
-<p>Spin dependent transport properties in dibenzopentalene molecular devices.</p>
-</div>
-
-<div class="research-card">
-<h3>Main Group Catalysis</h3>
-<p>Small molecule activation using frustrated Lewis pair chemistry.</p>
-</div>
-
-<div class="research-card">
-<h3>Machine Learning</h3>
-<p>Data-driven screening of excited-state molecular materials.</p>
-</div>
+<p>
+Understanding low-lying excited states in organic conjugated molecules
+for optoelectronic applications.
+</p>
 
 </div>
 
-</section>
+<div class="research-item">
+
+<h3>Singlet Fission Materials</h3>
+
+<p>
+Design and computational screening of molecules capable of efficient
+singlet fission for solar energy applications.
+</p>
 
 </div>
+
+<div class="research-item">
+
+<h3>Spintronics</h3>
+
+<p>
+Spin-dependent transport properties of molecular junctions using
+NEGF-DFT methods.
+</p>
+
+</div>
+
+<div class="research-item">
+
+<h3>Machine Learning for Materials</h3>
+
+<p>
+Using molecular descriptors and machine learning models to predict
+excited-state properties of organic molecules.
+</p>
+
+</div>
+
+</div>
+
+<a class="btn" href="research.html">View Research</a>
+
+</div>
+
+
+<!-- PUBLICATIONS -->
+
+<div class="card">
+
+<h2>📄 Publications</h2>
+
+<p>
+
+A list of my research publications and manuscripts in the field
+of computational chemistry and molecular materials.
+
+</p>
+
+<a class="btn" href="publications.html">View Publications</a>
+
+</div>
+
+
+<!-- PHOTOGRAPHY -->
+
+<div class="card">
+
+<h2>📷 Photography</h2>
+
+<p>
+
+Apart from research, I enjoy capturing nature and creative photography.
+A collection of my photographs can be viewed here.
+
+</p>
+
+<a class="btn" href="photography.html">View Gallery</a>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
 
 <footer>
-© 2026 Mousumi Nath
+
+© 2026 Mridusmita Nath
+
 </footer>
+
 
 </body>
 </html>
