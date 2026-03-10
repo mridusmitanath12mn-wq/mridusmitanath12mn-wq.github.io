@@ -1,55 +1,93 @@
 body{
-    font-family: "Segoe UI", Arial;
-    margin:0;
-    background:#f2f6ff;
+font-family: 'Segoe UI', Arial;
+margin:0;
+background:#f4f6fb;
+line-height:1.6;
 }
 
-header{
-    background:linear-gradient(90deg,#0047ab,#6a5acd,#ff6ec7);
-    color:white;
-    padding:30px;
-    text-align:center;
+/* Banner */
+
+.hero{
+background:url("images/banner.jpg");
+background-size:cover;
+background-position:center;
+height:250px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:32px;
 }
+
+/* Navigation */
 
 nav{
-    background:#222;
-    padding:10px;
-    text-align:center;
+background:#222;
+text-align:center;
+padding:12px;
 }
 
 nav a{
-    color:white;
-    margin:15px;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
 
 nav a:hover{
-    color:#ffcc00;
+color:#ffcc00;
 }
+
+/* Layout */
 
 .container{
-    max-width:1000px;
-    margin:auto;
-    background:white;
-    padding:40px;
+max-width:1000px;
+margin:auto;
+padding:40px;
+background:white;
 }
 
-h1,h2{
-    color:#003366;
+/* Intro section */
+
+.intro-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
-.card{
-    background:#f7f9ff;
-    padding:20px;
-    margin:20px 0;
-    border-left:5px solid #6a5acd;
+.intro-card{
+background:#ffeaf2;
+padding:25px;
+border-radius:8px;
 }
+
+.profile img{
+width:250px;
+border-radius:10px;
+}
+
+/* Research cards */
+
+.research-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.research-card{
+background:#f3f6ff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
