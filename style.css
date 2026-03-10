@@ -13,7 +13,7 @@ position:relative;
 background-image:url("bg1.jpg");
 background-size:cover;
 background-position:center;
-height:220px;   /* smaller banner */
+height:300px;   /* smaller banner */
 display:flex;
 align-items:center;
 justify-content:center;
