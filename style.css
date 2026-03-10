@@ -8,15 +8,33 @@ line-height:1.6;
 /* Banner */
 
 .hero{
-background:url("images/banner.jpg");
-background-size:cover;
-background-position:center;
-height:250px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:32px;
+position: relative;
+background-image: url("banner.jpg");
+background-size: cover;
+background-position: center;
+height: 380px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 42px;
+font-weight: bold;
+}
+
+.hero::before{
+content: "";
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: rgba(0,0,0,0.35);
+}
+
+.hero h1{
+position: relative;
+z-index: 2;
+text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
 }
 
 /* Navigation */
