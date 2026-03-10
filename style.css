@@ -6,6 +6,12 @@ line-height:1.6;
 color:#333;
 }
 
+
+.container{
+max-width:750px;
+margin:auto;
+padding:30px 20px;
+}
 /* ========================= */
 /* HERO / BANNER */
 /* ========================= */
@@ -77,10 +83,9 @@ color:#e0c7ff;
 /* ========================= */
 
 .container{
-max-width:900px;
-width:92%;
+max-width:750px;
 margin:auto;
-padding:40px 0;
+padding:30px 20px;
 }
 
 /* ========================= */
@@ -197,7 +202,7 @@ font-size:15px;
 }
 
 .container{
-width:95%;
+width:50%;
 }
 
 .research-grid{
