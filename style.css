@@ -189,3 +189,47 @@ width:110px;
 }
 
 }
+
+/* RESEARCH IMAGE SECTION */
+
+.section-title{
+text-align:center;
+color:#4b0082;
+margin-bottom:25px;
+}
+
+.research-images{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.research-img{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.research-img img{
+width:100%;
+border-radius:8px;
+}
+
+.research-img p{
+margin-top:10px;
+font-size:14px;
+font-weight:500;
+color:#444;
+}
+
+/* MOBILE */
+
+@media (max-width:700px){
+
+.research-images{
+grid-template-columns:1fr;
+}
+
+}
