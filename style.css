@@ -59,10 +59,31 @@ color:#ffcc00;
 /* Layout */
 
 .container{
-max-width:1000px;
+max-width:1100px;
+width:90%;
 margin:auto;
-padding:40px;
-background:white;
+}
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+.about img{
+width:150px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
 }
 
 /* Intro section */
