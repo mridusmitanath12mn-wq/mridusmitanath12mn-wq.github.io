@@ -389,3 +389,62 @@ width:140px;
 }
 
 }
+
+/*country*/
+.visitor-country-section {
+  padding: 60px 20px;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.visitor-country-section h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1f2d3d;
+}
+
+.visitor-subtitle {
+  font-family: "Times New Roman", serif;
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.visitor-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+#countryTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Times New Roman", serif;
+}
+
+#countryTable th,
+#countryTable td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+#countryTable th {
+  background: #eef3f8;
+  color: #1f2d3d;
+  font-size: 1.05rem;
+}
+
+#countryTable td {
+  color: #333;
+  font-size: 1rem;
+}
+
+#countryTable tr:hover {
+  background: #f6faff;
+}
