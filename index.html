@@ -119,5 +119,50 @@ You can view my full <a href="cv.html">Curriculum Vitae</a>.
 © 2026 Mridusmita Nath
 </footer>
 
+  ...
+
+  <script>
+  async function loadCountryVisits() {
+    const tbody = document.querySelector("#countryTable tbody");
+
+    try {
+      const trackUrl = "https://your-backend-url.com/api/track-visit";
+      const statsUrl = "https://your-backend-url.com/api/country-stats";
+
+      await fetch(trackUrl, { method: "POST" });
+
+      const response = await fetch(statsUrl);
+      if (!response.ok) {
+        throw new Error("Failed to fetch visitor stats");
+      }
+
+      const data = await response.json();
+      tbody.innerHTML = "";
+
+      if (!data || data.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="2">No visitor data available yet.</td></tr>`;
+        return;
+      }
+
+      data.forEach(item => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.country}</td>
+          <td>${item.visits}</td>
+        `;
+        tbody.appendChild(row);
+      });
+
+    } catch (error) {
+      tbody.innerHTML = `<tr><td colspan="2">Backend not connected yet.</td></tr>`;
+      console.error(error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadCountryVisits);
+  </script>
+</body>
+</html>
+  
 </body>
 </html>
